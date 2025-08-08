@@ -61,7 +61,7 @@ const Companies: React.FC = () => {
           className="text-center mb-12"
         >
           <h3 className="text-lg font-semibold text-gray-600 mb-8">
-            Trusted by Engineers at Leading Companies & Alumni of Top Universities
+            Trusted and Recommended by Engineers at Leading Companies & Alumni of Top Universities
           </h3>
         </motion.div>
 
