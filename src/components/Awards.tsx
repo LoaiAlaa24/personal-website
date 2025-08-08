@@ -37,7 +37,7 @@ const Awards: React.FC = () => {
               <img 
                 src="/personal_images/facebook hackathon/IMG_1866.jpg" 
                 alt="Facebook Hackathon Award"
-                className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-48 object-contain hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-yellow-600 to-transparent opacity-20"></div>
             </div>

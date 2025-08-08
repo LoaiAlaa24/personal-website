@@ -16,7 +16,7 @@ import Hotjar from './components/Hotjar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 overflow-x-hidden w-full">
       <Hotjar />
       <Navigation />
       

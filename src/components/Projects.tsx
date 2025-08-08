@@ -13,6 +13,24 @@ import {
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: "SMARTEVA - Powerful Chatbot",
+      description: "LangGraph-powered RAG workflow chatbot that revolutionizes document retrieval and automates manual tasks. Built multi-modal RAG pipelines enabling LLMs to query across text, images, and tables, reducing manual process time by 70% through Power Automate integration.",
+      technologies: ["LangGraph", "RAG", "FastAPI", "Azure", "Power Automate", "LangSmith", "RAGAS", "Pandas", "SQL"],
+      icon: <ChatBubbleBottomCenterTextIcon className="h-8 w-8" />,
+      color: "from-blue-600 to-indigo-700",
+      image: "/projects/efg holding.png",
+      github: null,
+      demo: null,
+      company: "EFG Holding",
+      logo: "/companies/EFG_Holding_5e28ead0a8.png",
+      highlights: [
+        "70% reduction in manual process time",
+        "Multi-modal RAG pipeline (text, images, tables)",
+        "LangSmith LLMOps monitoring & debugging",
+        "RAGAS metrics for pipeline evaluation"
+      ]
+    },
+    {
       title: "Simulation2Realism: Master Thesis",
       description: "Narrowing the gap between Simulation and Realism in Autonomous Driving. Adaptation of image generative AI model to autonomous driving dataset, creation of corner case scenarios in simulation and transformation to realistic street scenes.",
       technologies: ["Unity", "Stable Diffusion XL", "PyTorch", "Computer Vision", "Autonomous Driving"],
@@ -28,6 +46,24 @@ const Projects: React.FC = () => {
         "Presented to Volkswagen Group Executive Board",
         "Fine-tuned on Audi A2D2 dataset",
         "Corner case generation framework"
+      ]
+    },
+    {
+      title: "Question Answering over Privacy Policies",
+      description: "TUM Practical Project Course implementing cross-task generalization to enable a FLAN T5 model to generalize to seen and unseen tasks. Utilized Zero-Shot Learning, Few-Shot Learning, and advanced prompt engineering techniques with instruction fine-tuning and Parameter Efficient Fine-tuning (PEFT).",
+      technologies: ["FLAN T5", "Zero-Shot Learning", "Few-Shot Learning", "Prompt Engineering", "PEFT", "PrivacyGLUE"],
+      icon: <DocumentMagnifyingGlassIcon className="h-8 w-8" />,
+      color: "from-emerald-500 to-teal-600",
+      image: "/projects/tum practical course.png",
+      github: null,
+      demo: null,
+      company: "TUM",
+      logo: "/companies/tum.png",
+      highlights: [
+        "Cross-task generalization framework",
+        "Fine-tuned only 0.6% of total parameters",
+        "PrivacyGLUE dataset implementation",
+        "Instruction fine-tuning & PEFT techniques"
       ]
     },
     {
@@ -320,7 +356,7 @@ const Projects: React.FC = () => {
                     {project.technologies.slice(0, 4).map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className={`px-3 py-1 bg-gradient-to-r ${project.color} bg-opacity-10 text-gray-800 text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-20 transition-all duration-200`}
+                        className={`px-3 py-1 bg-gradient-to-r ${project.color} text-white text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-90 transition-all duration-200`}
                       >
                         {tech}
                       </span>
