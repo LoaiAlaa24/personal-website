@@ -12,9 +12,7 @@ import {
   Psychology, 
   Visibility, 
   AutoAwesome, 
-  ThumbUp,
-  EmojiEvents,
-  MenuBook
+  ThumbUp
 } from '@mui/icons-material';
 
 const Skills: React.FC = () => {
