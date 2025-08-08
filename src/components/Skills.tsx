@@ -19,78 +19,39 @@ const Skills: React.FC = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      icon: <CodeBracketIcon className="h-8 w-8" />,
+      icon: <CodeBracketIcon className="h-6 w-6" />,
       color: "from-blue-500 to-cyan-600",
-      skills: [
-        { name: "Python", level: 95 },
-        { name: "JavaScript", level: 90 },
-        { name: "TypeScript", level: 85 },
-        { name: "SQL", level: 85 }
-      ]
+      skills: ["Python", "JavaScript", "TypeScript", "SQL", "C#", "Java"]
     },
     {
       title: "AI & Machine Learning",
-      icon: <CpuChipIcon className="h-8 w-8" />,
+      icon: <CpuChipIcon className="h-6 w-6" />,
       color: "from-purple-500 to-pink-600",
-      skills: [
-        { name: "Multi-Modal RAG Systems", level: 97 },
-        { name: "PyTorch", level: 95 },
-        { name: "TensorFlow", level: 90 },
-        { name: "LangChain", level: 90 },
-        { name: "Transformers", level: 88 },
-        { name: "OpenCV", level: 85 },
-        { name: "Stable Diffusion", level: 85 },
-        { name: "BERT", level: 88 },
-      ]
+      skills: ["PyTorch", "TensorFlow", "LangChain", "Transformers", "OpenCV", "Stable Diffusion", "BERT", "Multi-Modal RAG Systems", "Computer Vision", "NLP"]
     },
     {
       title: "Web Development",
-      icon: <DevicePhoneMobileIcon className="h-8 w-8" />,
+      icon: <DevicePhoneMobileIcon className="h-6 w-6" />,
       color: "from-green-500 to-teal-600",
-      skills: [
-        { name: "React.js", level: 90 },
-        { name: "React Native", level: 88 },
-        { name: "FastAPI", level: 92 },
-        { name: "Flask", level: 88 },
-        { name: "Node.js", level: 80 },
-        { name: "HTML/CSS", level: 85 }
-      ]
+      skills: ["React.js", "React Native", "FastAPI", "Flask", "Node.js", "HTML/CSS", "Tailwind CSS", "Material-UI"]
     },
     {
       title: "Cloud & DevOps",
-      icon: <CloudIcon className="h-8 w-8" />,
+      icon: <CloudIcon className="h-6 w-6" />,
       color: "from-orange-500 to-red-600",
-      skills: [
-        { name: "Azure", level: 88 },
-        { name: "AWS", level: 85 },
-        { name: "GCP", level: 82 },
-        { name: "Docker", level: 85 },
-        { name: "Kubernetes", level: 75 }
-      ]
+      skills: ["Azure", "AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "Microservices"]
     },
     {
       title: "Databases",
-      icon: <CircleStackIcon className="h-8 w-8" />,
+      icon: <CircleStackIcon className="h-6 w-6" />,
       color: "from-indigo-500 to-purple-600",
-      skills: [
-        { name: "MongoDB", level: 88 },
-        { name: "Vector Databases", level: 88 },
-        { name: "PostgreSQL", level: 85 },
-        { name: "MySQL", level: 82 },
-      ]
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Vector Databases", "Redis", "Elasticsearch"]
     },
     {
       title: "Tools & Technologies",
-      icon: <CommandLineIcon className="h-8 w-8" />,
+      icon: <CommandLineIcon className="h-6 w-6" />,
       color: "from-cyan-500 to-blue-600",
-      skills: [
-        { name: "LangGraph", level: 96 },
-        { name: "Git", level: 92 },
-        { name: "Unity", level: 80 },
-        { name: "Streamlit", level: 88 },
-        { name: "Jupyter", level: 90 },
-        { name: "LangSmith", level: 85 }
-      ]
+      skills: ["Git", "LangGraph", "Unity", "Streamlit", "Jupyter", "LangSmith", "RAGAS", "LangSmith"]
     }
   ];
 
@@ -147,11 +108,11 @@ const Skills: React.FC = () => {
               key={categoryIndex}
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
               {/* Category Header */}
               <div className="flex items-center mb-6">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} mr-4`}>
+                <div className={`p-2 rounded-lg bg-gradient-to-r ${category.color} mr-4`}>
                   <div className="text-white">
                     {category.icon}
                   </div>
@@ -162,27 +123,14 @@ const Skills: React.FC = () => {
               </div>
 
               {/* Skills List */}
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="text-sm font-medium text-gray-700">
-                        {skill.name}
-                      </span>
-                      <span className="text-sm text-gray-500">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: categoryIndex * 0.1 + skillIndex * 0.05 }}
-                        viewport={{ once: true }}
-                        className={`h-2 rounded-full bg-gradient-to-r ${category.color}`}
-                      />
-                    </div>
-                  </div>
+                  <span
+                    key={skillIndex}
+                    className={`px-3 py-1 bg-gradient-to-r ${category.color} bg-opacity-10 text-gray-800 text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-20 transition-all duration-200`}
+                  >
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>
