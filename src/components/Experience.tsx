@@ -27,9 +27,11 @@ const Experience: React.FC = () => {
       period: "Dec 2024 – Present",
       description: [
         "Built LangGraph RAG agents with FastAPI on Azure integrated into Microsoft Power Automate, improving workflow efficiency by 70%",
-        "Enabled multimodal retrieval (text + images + tables), used LangSmith, and evaluated performance with RAGAS"
+        "Enabled multimodal retrieval (text + images + tables), used LangSmith, and evaluated performance with RAGAS",
+        "Created and supervise internship program with students working on HR matching system and investment helper using LLMs and RAGs",
+        "Conduct daily workshops teaching software engineering and AI concepts from basic to advanced level"
       ],
-      technologies: ["LangGraph", "FastAPI", "Azure", "Microsoft Power Automate", "LangSmith", "RAGAS"],
+      technologies: ["LangGraph", "FastAPI", "Azure", "Microsoft Power Automate", "LangSmith", "RAGAS", "Mentoring", "Teaching"],
       color: "from-blue-500 to-purple-600",
       image: null,
       images: null,
@@ -112,6 +114,21 @@ const Experience: React.FC = () => {
       image: null,
       images: null,
       logo: "/companies/Extreme-Solution-Egypt.png"
+    },
+    {
+      company: "The German University in Cairo",
+      position: "Junior Teaching Assistant",
+      location: "Cairo, Egypt",
+      period: "Sep 2018 – Mar 2020",
+      description: [
+        "Taught CSEN101 to first semester students, covering Python basics and Object-Oriented Programming fundamentals",
+        "Taught CSEN201 to second semester students, focusing on Java and advanced OOP concepts"
+      ],
+      technologies: ["Python", "Java", "OOP", "Teaching", "Programming Fundamentals"],
+      color: "from-teal-500 to-green-600",
+      image: "/personal_images/guc/package.jpeg",
+      images: null,
+      logo: "/companies/guc.png"
     }
   ];
 

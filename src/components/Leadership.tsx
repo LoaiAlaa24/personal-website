@@ -78,7 +78,7 @@ const Leadership: React.FC = () => {
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
             {/* Hero Image Slider */}
             <div 
-              className="relative h-64 overflow-hidden"
+              className="relative h-80 overflow-hidden"
               onMouseEnter={() => setIsAutoPlay(false)}
               onMouseLeave={() => setIsAutoPlay(true)}
             >
@@ -124,31 +124,33 @@ const Leadership: React.FC = () => {
                 ))}
               </div>
 
-              {/* Title */}
-              <div className="absolute bottom-12 left-6 right-6">
-                <div className="flex items-center space-x-4 text-white">
-                  <a
-                    href="https://petrotreatment.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-black/30 hover:bg-black/50 backdrop-blur-md rounded-xl border border-white/20 transition-all duration-300 hover:scale-105 group"
-                  >
-                    <img 
-                      src="/companies/petrotreatment.png" 
-                      alt="Petrotreatment Logo"
-                      className="h-8 w-8 object-contain brightness-0 invert group-hover:brightness-75 transition-all duration-300"
-                    />
-                  </a>
-                  <div>
-                    <h3 className="text-2xl font-bold mb-1 drop-shadow-lg">Major Shareholder & Tech Advisor</h3>
+              {/* Title with Background Overlay */}
+              <div className="absolute bottom-0 left-0 right-0">
+                <div className="bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6 backdrop-blur-sm">
+                  <div className="flex items-center space-x-4 text-white">
                     <a
                       href="https://petrotreatment.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-200 hover:text-white font-medium drop-shadow-md transition-colors duration-300"
+                      className="p-3 bg-black/40 hover:bg-black/60 backdrop-blur-md rounded-xl border border-white/30 transition-all duration-300 hover:scale-105 group"
                     >
-                      Petrotreatment Group
+                      <img 
+                        src="/companies/petrotreatment.png" 
+                        alt="Petrotreatment Logo"
+                        className="h-8 w-8 object-contain brightness-0 invert group-hover:brightness-75 transition-all duration-300"
+                      />
                     </a>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-1 text-white drop-shadow-2xl">Major Shareholder & Tech Advisor</h3>
+                      <a
+                        href="https://petrotreatment.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-100 hover:text-white font-medium drop-shadow-xl transition-colors duration-300"
+                      >
+                        Petrotreatment Group
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -188,8 +190,8 @@ const Leadership: React.FC = () => {
               {/* Impact Highlights */}
               <div className="grid md:grid-cols-4 gap-4 mb-8">
                 <div className="text-center p-4 bg-primary-50 rounded-xl">
-                  <div className="text-2xl font-bold text-primary-600 mb-2">18</div>
-                  <div className="text-sm text-gray-600">National Winners</div>
+                  <div className="text-2xl font-bold text-primary-600 mb-2">3rd</div>
+                  <div className="text-sm text-gray-600">National Place</div>
                 </div>
                 <div className="text-center p-4 bg-blue-50 rounded-xl">
                   <div className="text-2xl font-bold text-blue-600 mb-2">COP29</div>
@@ -244,7 +246,7 @@ const Leadership: React.FC = () => {
                   >
                     <div className="w-2 h-2 rounded-full bg-indigo-600 mt-3 flex-shrink-0"></div>
                     <p className="text-gray-700 leading-relaxed">
-                      <strong>International Recognition:</strong> Represented Egypt as part of the national delegation at COP29 Azerbaijan in Baku, showcasing our project among 18 national winners for third place
+                      <strong>International Recognition:</strong> Achieved 3rd place on national level and represented Egypt as part of the national delegation at COP29 Azerbaijan in Baku, showcasing our project among the top winners
                     </p>
                   </motion.div>
 

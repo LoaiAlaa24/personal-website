@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowDownIcon, DocumentArrowDownIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import AnimatedBackground from './AnimatedBackground';
 
 const Hero: React.FC = () => {
   const scrollToNext = () => {
@@ -28,8 +29,11 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="home" className="min-h-[80vh] flex items-center justify-center relative bg-gradient-to-br from-gray-50 via-white to-gray-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section id="home" className="min-h-[80vh] flex items-center justify-center relative bg-gradient-to-br from-gray-50 via-white to-gray-100 overflow-hidden">
+      {/* Animated Background */}
+      <AnimatedBackground />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
