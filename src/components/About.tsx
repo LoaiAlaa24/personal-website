@@ -64,7 +64,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Languages</h4>
-                  <p className="text-gray-600">English, German (B1)</p>
+                  <p className="text-gray-600">English, German (B1), Arabic</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Email</h4>
