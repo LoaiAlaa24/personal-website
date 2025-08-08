@@ -57,6 +57,8 @@ const Projects: React.FC = () => {
       image: "/projects/hotdesk quality assurance.png",
       github: null,
       demo: null,
+      company: "Hotdesk",
+      logo: "/companies/hotdesk.png",
       highlights: [
         "90%+ model accuracy",
         "Automated image quality scoring",
@@ -91,6 +93,8 @@ const Projects: React.FC = () => {
       image: "/projects/swm email classifier.png",
       github: null,
       demo: null,
+      company: "Stadtwerke München",
+      logo: "/companies/swm.png",
       highlights: [
         "10-topic classification system",
         "Fine-tuned German BERT",
@@ -107,6 +111,8 @@ const Projects: React.FC = () => {
       image: "/projects/knowron Dense Passage.png",
       github: null,
       demo: null,
+      company: "KNOWRON",
+      logo: "/companies/Knowron.png",
       highlights: [
         "Semantic search over syntactic matching",
         "Flutter app for dataset annotation",
@@ -141,6 +147,8 @@ const Projects: React.FC = () => {
       image: null,
       github: null,
       demo: null,
+      company: "KNOWRON",
+      logo: "/companies/Knowron.png",
       highlights: [
         "Analytics dashboard",
         "Articles creation & editing",
@@ -157,6 +165,8 @@ const Projects: React.FC = () => {
       image: "/projects/drive like an egyptian.png",
       github: null,
       demo: "https://www.youtube.com/watch?v=_mnGsw9FBTk",
+      company: "GUC",
+      logo: "/companies/guc.png",
       highlights: [
         "Bachelor thesis project (Grade: 1.0)",
         "Egyptian traffic simulation",
@@ -173,6 +183,8 @@ const Projects: React.FC = () => {
       image: null,
       github: null,
       demo: null,
+      company: "Extreme Solutions",
+      logo: "/companies/Extreme-Solution-Egypt.png",
       highlights: [
         "Published to App Store & Google Play",
         "American University in Cairo app",
