@@ -236,13 +236,13 @@ const Projects: React.FC = () => {
                   />
                   
                   {/* Icon overlay */}
-                  <div className="absolute top-4 left-4">
+                  {/* <div className="absolute top-4 left-4">
                     <div className={`p-3 rounded-xl bg-white/90 backdrop-blur-sm shadow-lg`}>
                       <div className={`text-transparent bg-gradient-to-r ${project.color} bg-clip-text`}>
                         {project.icon}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               )}
               
