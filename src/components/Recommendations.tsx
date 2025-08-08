@@ -163,22 +163,22 @@ const Recommendations: React.FC = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevRecommendation}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary-300"
+            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 z-10 p-2 sm:p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary-300"
             aria-label="Previous recommendation"
           >
-            <ChevronLeftIcon className="h-6 w-6 text-gray-600" />
+            <ChevronLeftIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
           </button>
 
           <button
             onClick={nextRecommendation}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary-300"
+            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 z-10 p-2 sm:p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 hover:border-primary-300"
             aria-label="Next recommendation"
           >
-            <ChevronRightIcon className="h-6 w-6 text-gray-600" />
+            <ChevronRightIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
           </button>
 
           {/* Sliding Window */}
-          <div className="mx-12 overflow-hidden relative">
+          <div className="mx-8 sm:mx-12 overflow-hidden relative">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={currentIndex}
@@ -203,7 +203,7 @@ const Recommendations: React.FC = () => {
                     prevRecommendation();
                   }
                 }}
-                className="bg-gray-50 rounded-2xl p-8 shadow-lg relative w-full"
+                className="bg-gray-50 rounded-2xl p-4 sm:p-8 shadow-lg relative w-full h-[600px] sm:h-[500px] flex flex-col"
               >
                 {(() => {
                   const rec = recommendations[currentIndex];
@@ -215,8 +215,8 @@ const Recommendations: React.FC = () => {
                       </div>
 
                       {/* Header with Profile Picture */}
-                      <div className="mb-6">
-                        <div className="flex items-start space-x-6 mb-6">
+                      <div className="mb-4 sm:mb-6 flex-shrink-0">
+                        <div className="flex flex-col sm:flex-row sm:items-start space-y-4 sm:space-y-0 sm:space-x-6 mb-4 sm:mb-6">
                           {/* Profile Picture */}
                           <div className="flex-shrink-0">
                             {rec.image ? (
@@ -235,15 +235,15 @@ const Recommendations: React.FC = () => {
                           </div>
 
                           {/* Name and Title */}
-                          <div className="flex-1 min-w-0">
-                            <h4 className="text-2xl font-bold text-gray-900 mb-2">
+                          <div className="flex-1 min-w-0 text-center sm:text-left">
+                            <h4 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
                               {rec.name}
                             </h4>
-                            <p className="text-primary-600 font-medium mb-4">
+                            <p className="text-primary-600 font-medium mb-2 sm:mb-4 text-sm sm:text-base">
                               {rec.title}
                             </p>
                             
-                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 text-sm text-gray-500">
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-500">
                               <div className="flex items-center">
                                 <UserIcon className="h-4 w-4 mr-2" />
                                 <span>{rec.relationship}</span>
@@ -258,7 +258,7 @@ const Recommendations: React.FC = () => {
                       </div>
 
                       {/* Testimonial */}
-                      <blockquote className="text-gray-700 leading-relaxed text-lg italic">
+                      <blockquote className="text-gray-700 leading-relaxed text-base sm:text-lg italic flex-1 overflow-y-auto">
                         "{rec.testimonial}"
                       </blockquote>
 
