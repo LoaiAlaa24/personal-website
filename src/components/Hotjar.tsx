@@ -9,19 +9,12 @@ declare global {
 
 const Hotjar: React.FC = () => {
   useEffect(() => {
-    const hotjarId = process.env.REACT_APP_HOTJAR_ID;
-    
-    if (!hotjarId || hotjarId === 'YOUR_HOTJAR_ID') {
-      console.log('Hotjar ID not configured. Please add your Hotjar ID to .env file.');
-      return;
-    }
-
-    // Initialize Hotjar
+    // Initialize Hotjar with your specific tracking ID
     (function(h: any, o: any, t: any, j: any, a: any, r: any) {
       h.hj = h.hj || function() {
         (h.hj.q = h.hj.q || []).push(arguments);
       };
-      h._hjSettings = { hjid: parseInt(hotjarId), hjsv: 6 };
+      h._hjSettings = { hjid: 6488494, hjsv: 6 };
       a = o.getElementsByTagName('head')[0];
       r = o.createElement('script');
       r.async = 1;
