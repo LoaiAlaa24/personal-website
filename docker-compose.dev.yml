@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  personal-website-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: loay-nasser-portfolio-dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_EMAILJS_SERVICE_ID=${REACT_APP_EMAILJS_SERVICE_ID}
+      - REACT_APP_EMAILJS_TEMPLATE_ID=${REACT_APP_EMAILJS_TEMPLATE_ID}
+      - REACT_APP_EMAILJS_PUBLIC_KEY=${REACT_APP_EMAILJS_PUBLIC_KEY}
+      - REACT_APP_HOTJAR_ID=${REACT_APP_HOTJAR_ID}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
+    networks:
+      - portfolio-network-dev
+
+networks:
+  portfolio-network-dev:
+    driver: bridge

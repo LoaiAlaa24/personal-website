@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  BuildingOffice2Icon,
   CalendarIcon,
   MapPinIcon,
   SparklesIcon,
