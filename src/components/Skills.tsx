@@ -127,7 +127,7 @@ const Skills: React.FC = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <span
                     key={skillIndex}
-                    className={`px-3 py-1 bg-gradient-to-r ${category.color} bg-opacity-10 text-gray-800 text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-20 transition-all duration-200`}
+                    className={`px-3 py-1 bg-gradient-to-r ${category.color} text-white text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-90 transition-all duration-200`}
                   >
                     {skill}
                   </span>
