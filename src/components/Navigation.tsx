@@ -16,15 +16,10 @@ const Navigation: React.FC = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
-    { name: 'Leadership', href: '#leadership' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Awards', href: '#awards' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Recommendations', href: '#recommendations' },
-    { name: 'References', href: '#references' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -57,7 +52,7 @@ const Navigation: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-baseline space-x-6">
               {navItems.map((item) => (
                 <button
                   key={item.name}
