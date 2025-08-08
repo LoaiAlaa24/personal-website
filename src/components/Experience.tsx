@@ -277,7 +277,7 @@ const Experience: React.FC = () => {
                       {exp.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full border border-gray-200"
+                          className="px-3 py-1 bg-gray-100 text-gray-800 text-sm rounded-full border border-gray-200 hover:bg-gray-200 transition-all duration-200"
                         >
                           {tech}
                         </span>

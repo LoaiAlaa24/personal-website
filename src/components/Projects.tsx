@@ -308,7 +308,7 @@ const Projects: React.FC = () => {
                     {project.technologies.slice(0, 4).map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className={`px-3 py-1 bg-gradient-to-r ${project.color} bg-opacity-10 text-gray-700 text-xs font-medium rounded-full border border-gray-200`}
+                        className={`px-3 py-1 bg-gradient-to-r ${project.color} bg-opacity-10 text-gray-800 text-xs font-medium rounded-full border border-gray-200 hover:bg-opacity-20 transition-all duration-200`}
                       >
                         {tech}
                       </span>
