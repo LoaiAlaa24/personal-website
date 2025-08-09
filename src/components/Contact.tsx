@@ -44,11 +44,18 @@ const Contact: React.FC = () => {
     if (!form.current) return;
 
     // EmailJS configuration from environment variables
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_e82d9ei';
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_tviut5n';
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'RroTQ8zki1vZluJBw';
+
+    console.log('EmailJS Config:', { serviceId, templateId, publicKey }); // Debug log
 
     if (!serviceId || !templateId || !publicKey) {
+      console.error('Missing EmailJS configuration:', { 
+        hasServiceId: !!serviceId, 
+        hasTemplateId: !!templateId, 
+        hasPublicKey: !!publicKey 
+      });
       setError('Email configuration is missing. Please contact me directly via email.');
       setIsSubmitting(false);
       return;
