@@ -48,14 +48,7 @@ const Contact: React.FC = () => {
     const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_tviut5n';
     const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'RroTQ8zki1vZluJBw';
 
-    console.log('EmailJS Config:', { serviceId, templateId, publicKey }); // Debug log
-
     if (!serviceId || !templateId || !publicKey) {
-      console.error('Missing EmailJS configuration:', { 
-        hasServiceId: !!serviceId, 
-        hasTemplateId: !!templateId, 
-        hasPublicKey: !!publicKey 
-      });
       setError('Email configuration is missing. Please contact me directly via email.');
       setIsSubmitting(false);
       return;
@@ -63,7 +56,6 @@ const Contact: React.FC = () => {
 
     emailjs.sendForm(serviceId, templateId, form.current, publicKey)
       .then((result) => {
-        console.log('SUCCESS!', result.text);
         setIsSubmitting(false);
         setIsSubmitted(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
@@ -72,7 +64,6 @@ const Contact: React.FC = () => {
         setTimeout(() => setIsSubmitted(false), 5000);
       })
       .catch((error) => {
-        console.log('FAILED...', error.text);
         setIsSubmitting(false);
         setError('Failed to send message. Please try again or contact me directly via email.');
       });
