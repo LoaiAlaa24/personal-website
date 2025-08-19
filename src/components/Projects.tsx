@@ -13,6 +13,24 @@ import {
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: "HR Matching System",
+      description: "AI-powered HR recruitment system using semantic search and LLMs to match job descriptions with top candidates. Leverages advanced natural language processing to understand job requirements and candidate profiles, delivering precise matches based on skills, experience, and cultural fit.",
+      technologies: ["Semantic Search", "LLMs", "NLP", "Vector Databases", "Python", "FastAPI", "Embeddings", "RAG"],
+      icon: <DocumentMagnifyingGlassIcon className="h-8 w-8" />,
+      color: "from-violet-600 to-purple-700",
+      image: null,
+      github: null,
+      demo: null,
+      company: "EFG Holding",
+      logo: "/companies/EFG_Holding_5e28ead0a8.png",
+      highlights: [
+        "Semantic matching over keyword-based search",
+        "LLM-powered candidate-job compatibility scoring",
+        "Automated top candidate ranking system",
+        "Natural language job requirement parsing"
+      ]
+    },
+    {
       title: "SMARTEVA - Powerful Chatbot",
       description: "LangGraph-powered RAG workflow chatbot that revolutionizes document retrieval and automates manual tasks. Built multi-modal RAG pipelines enabling LLMs to query across text, images, and tables, reducing manual process time by 70% through Power Automate integration.",
       technologies: ["LangGraph", "RAG", "FastAPI", "Azure", "Power Automate", "LangSmith", "RAGAS", "Pandas", "SQL"],

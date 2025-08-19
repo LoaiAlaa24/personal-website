@@ -80,7 +80,7 @@ const Recommendations: React.FC = () => {
           if (prev >= 100) {
             return 0;
           }
-          return prev + 2; // Increment by 2% every 100ms (5000ms / 50 steps = 100ms)
+          return prev + 1; // Increment by 1% every 100ms (10000ms / 100 steps = 100ms)
         });
       }, 100);
 
@@ -89,7 +89,7 @@ const Recommendations: React.FC = () => {
         setDirection(1);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % recommendations.length);
         setProgress(0);
-      }, 5000);
+      }, 10000);
 
       return () => {
         if (interval) clearInterval(interval);
@@ -284,7 +284,7 @@ const Recommendations: React.FC = () => {
               </div>
               <div className="text-center mt-2">
                 <span className="text-xs text-gray-500">
-                  Auto-advancing in {Math.ceil((100 - progress) / 20)} seconds
+                  Auto-advancing in {Math.ceil((100 - progress) / 10)} seconds
                 </span>
               </div>
             </div>
