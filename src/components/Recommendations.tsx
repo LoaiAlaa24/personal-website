@@ -33,6 +33,14 @@ const Recommendations: React.FC = () => {
       testimonial: "Loay is one of the brightest minds I've worked with. He built Hotdesk's first recommendation engine, improving conversion by 20%, and solved major challenges with image classification models. His contributions significantly boosted our platform performance."
     },
     {
+      name: "Hala Hagag",
+      title: "Junior Computer Science student @ Nile University",
+      relationship: "Reported directly to Loay",
+      date: "September 1, 2025",
+      image: "/employees/hala-hagag.jpeg",
+      testimonial: "I had the privilege of being mentored by Loay during my internship at EFG Holding, and I couldn't have asked for a better mentor. He always created a supportive and encouraging environment that made learning both fun and impactful. Loay has a great way of explaining complex topics clearly and pushing you to think deeper, while also giving you the confidence to try, fail, and improve. His feedback was always constructive, and he constantly motivated us to grow not just as interns, but as professionals. What stood out most is how approachable and genuinely caring he is. He went above and beyond to guide us, celebrate our progress, and make sure we felt confident in our work. Anyone who has the chance to work with or be mentored by Loay will not only learn a lot, but also enjoy the journey."
+    },
+    {
       name: "Ali Kareem Raja",
       title: "Co-Founder @ KNOWRON | MIT | Forbes 30u30",
       relationship: "Managed Loay directly",
@@ -63,6 +71,30 @@ const Recommendations: React.FC = () => {
       date: "June 2, 2025",
       image: "/employees/Ali Ahmed.jpeg",
       testimonial: "I've known and collaborated with Loay for over nine years. Throughout university and various projects, he stood out for his innovation and deep technical insight. Loay is passionate about emerging tech, especially AI, and always brings fresh perspectives. I wholeheartedly recommend him for his strong communication, collaborative mindset, and impact-driven attitude."
+    },
+    {
+      name: "Laila Amgad El Zawawy",
+      title: "Senior Computer Science student minoring in AI @ MIU | Data Science Intern @ EFG",
+      relationship: "Reported directly to Loay",
+      date: "September 1, 2025",
+      image: "/employees/laila-amgad-el-zawawy.jpeg",
+      testimonial: "I had the privilege of being mentored by Loay during my internship at EFG Holding as a Data Science Intern. His guidance and support played a huge role in making my experience both valuable and enjoyable. Loay has an exceptional ability to simplify complex concepts and explain them in a clear, practical way. He always made himself available to answer questions, provide feedback, and encourage me to push my skills further. What stood out most was how he created an atmosphere that was not only productive but also fun, which made every challenge feel exciting rather than overwhelming. I'm truly grateful for his mentorship and the confidence I gained while working under his guidance. I highly recommend Loay for his technical expertise, leadership, and the positive energy he brings to any team."
+    },
+    {
+      name: "Yahia Samer",
+      title: "Student at German International University - GIU",
+      relationship: "Reported directly to Loay",
+      date: "September 1, 2025",
+      image: null,
+      testimonial: "During my internship at EFG Holding, I had the privilege of working under Loay, who made a big impact on my learning experience in just one month. He not only introduced us to advanced topics like LLMs, RAG, and LangChain through insightful workshops, but also trusted us to apply these concepts in real projects. What stood out most was how approachable and supportive he was, always making time to check in and guide us, even with his own busy schedule. Rather than giving direct answers, he encouraged us to think differently and find solutions on our own, which helped me become much more independent and confident in my work. His friendly nature and mentorship style created an environment where learning felt both challenging and motivating. I'm really grateful to have had the chance to learn from him, and I believe anyone who works with him will benefit from his expertise and guidance."
+    },
+    {
+      name: "Ahmed Hossam",
+      title: "Data scientist senior at SAMS college",
+      relationship: "Reported directly to Loay",
+      date: "September 1, 2025",
+      image: null,
+      testimonial: "I had the privilege of working directly under Loay during my internship at EFG Holding. His leadership and guidance were instrumental in shaping my professional growth and making my experience both rewarding and impactful. Loay has a remarkable ability to manage teams with clarity, patience, and vision. He always ensured that I had the support and direction I needed while also giving me the space to take ownership of my work. His feedback was consistently constructive and insightful, encouraging me to grow, refine my skills, and approach challenges with confidence. What I admired most was how he fostered a positive and motivating work environment. He balanced professionalism with approachability, which made collaboration enjoyable and turned every challenge into an opportunity to learn rather than an obstacle. I am truly grateful for his mentorship and for the confidence I gained under his direct management. I highly recommend Loay for his leadership, strategic thinking, and the positive impact he brings to any team he leads."
     }
   ];
 
@@ -226,7 +258,7 @@ const Recommendations: React.FC = () => {
                                 className="w-20 h-20 rounded-full object-cover border-3 border-primary-200"
                               />
                             ) : (
-                              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary-400 to-blue-500 flex items-center justify-center border-3 border-primary-200">
+                              <div className="w-20 h-20 rounded-full bg-blue-500 flex items-center justify-center border-3 border-primary-200">
                                 <span className="text-white font-bold text-xl">
                                   {rec.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
                                 </span>

@@ -33,7 +33,7 @@ const Experience: React.FC = () => {
       ],
       technologies: ["LangGraph", "FastAPI", "Azure", "Microsoft Power Automate", "LangSmith", "RAGAS", "Mentoring", "Teaching"],
       color: "from-blue-500 to-purple-600",
-      image: null,
+      image: "/personal_images/efg/efg-team.jpg",
       images: null,
       logo: "/companies/EFG_Holding_5e28ead0a8.png"
     },
