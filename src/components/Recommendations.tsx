@@ -9,20 +9,20 @@ const Recommendations: React.FC = () => {
   const [progress, setProgress] = useState(0);
   const recommendations = [
     {
-      name: "Max Weber",
-      title: "Data Scientist @ SWM",
-      relationship: "Managed Loay directly",
-      date: "June 1, 2025",
-      image: "/employees/Max Weber.jpeg",
-      testimonial: "Loay was an outstanding working student at SWM. He contributed to Python AI projects and demonstrated excellent problem-solving. He also led a workshop on Deep Learning, showcasing his communication skills and expertise. I highly recommend him."
-    },
-    {
       name: "Mohamed Hamza",
       title: "Software Engineer at Google",
       relationship: "Managed Loay directly",
       date: "June 8, 2025",
       image: "/employees/Mohamed Hamza.jpeg",
       testimonial: "I had the distinct pleasure of working alongside Loay at Hotdesk, where he demonstrated exceptional leadership in spearheading a critical Machine Learning project. He was instrumental in developing and deploying a complex ML model from ideation to production. Loay consistently navigated ambiguity with strategic clarity, transforming abstract ideas into impactful solutions. His proactive approach and deep expertise make him an invaluable asset to any data-driven organization."
+    },
+    {
+      name: "Max Weber",
+      title: "Data Scientist @ SWM",
+      relationship: "Managed Loay directly",
+      date: "June 1, 2025",
+      image: "/employees/Max Weber.jpeg",
+      testimonial: "Loay was an outstanding working student at SWM. He contributed to Python AI projects and demonstrated excellent problem-solving. He also led a workshop on Deep Learning, showcasing his communication skills and expertise. I highly recommend him."
     },
     {
       name: "Mohamed Ayman Fathy",
@@ -47,6 +47,14 @@ const Recommendations: React.FC = () => {
       date: "July 21, 2025",
       image: "/employees/Ali Kareem Raja.jpeg",
       testimonial: "I had the chance to manage Loay during his time as a Frontend Working Student while he was completing his Master's at TU Munich. He joined us early in the company's journey and played a key role in developing beta versions of our mobile and web applications. Loay's focus was primarily on rapid prototyping — helping us bring early feature concepts to life quickly so we could test product hypotheses and gather user feedback. His work was important in helping us validate ideas and iterate fast, which is critical in the early stages of a startup. Loay was dependable, eager to contribute, and handled scoped tasks well. He was also a positive and energetic presence in the office, always up for a discussion and helping maintain a friendly team environment."
+    },
+    {
+      name: "Yahia Elbanhawy",
+      title: "Data Science Intern @ EFG | Junior Data Science Student at The American University in Cairo | AUC Student Ambassador | Ex Web Development and Data Analysis Intern @ GIG",
+      relationship: "Reported directly to Loay",
+      date: "September 1, 2025",
+      image: "/employees/Yahia ElBanhawy.jpeg",
+      testimonial: "I am deeply honored to have been mentored by Loay, Senior Data Scientist, whose expert guidance and support were instrumental in shaping my journey. His mentorship not only strengthened my technical understanding, skills and best practices but also gave me valuable insight into how innovation and collaboration drive impactful projects. This internship combined structured workshops with real world project implementation, where I worked on impactful AI-powered solutions across the Legal & Internal Audit and HR departments. I had the opportunity to work on two projects: AI Contract handling tool - developed individually, this tool automates and streamlines the review of long, complex contracts. Leveraging text extraction, chunking, embeddings & vectorstore, and LLM, it enables semantic search, retrieval, and key information extraction, making contract analysis faster, smarter, and more reliable. Candidate Pool Management Assistant (CPMA) - developed collaboratively with my teammates Nour Salem, Hala Hagag, Menna Elgamal, and Laila Amgad El Zawawy, this tool enhances recruitment by matching candidates to job descriptions more effectively. By combining optical character recognition (OCR), LLM-based summarization, vector embedding, ranking and scoring, and LLM-based evaluations, the system efficiently identifies top candidates and supports HR decision-making."
     },
     {
       name: "Youssef Hany Mahmoud",
