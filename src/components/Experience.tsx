@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
       description: [
         "Built LangGraph RAG agents with FastAPI on Azure integrated into Microsoft Power Automate, improving workflow efficiency by 70%",
         "Enabled multimodal retrieval (text + images + tables), used LangSmith, and evaluated performance with RAGAS",
-        "Created and supervise internship program with students working on HR matching system and investment helper using LLMs and RAGs",
+        "Created and supervised internship program with students working on HR matching system and investment helper using LLMs and RAGs",
         "Conduct daily workshops teaching software engineering and AI concepts from basic to advanced level"
       ],
       technologies: ["LangGraph", "FastAPI", "Azure", "Microsoft Power Automate", "LangSmith", "RAGAS", "Mentoring", "Teaching"],
