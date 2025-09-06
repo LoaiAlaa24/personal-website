@@ -22,8 +22,7 @@ const Recommendations: React.FC = () => {
       relationship: "Managed Loay directly",
       date: "June 1, 2025",
       image: "/employees/Max Weber.jpeg",
-      testimonial: "Loay was an outstanding working student at SWM. He contributed to Python AI projects and demonstrated excellent problem-solving. He also led a workshop on Deep Learning, showcasing his communication skills and expertise. I highly recommend him."
-    },
+      testimonial: "It’s rare to come across a working student as outstanding as Loay. Not only was he a pleasure to work with, he also demonstrated very good problem-solving skills across various projects at SWM. There he made several meaningful contributions to our Python development projects and impressed me in particular with his ability to tackle complex challenges in the field of AI. In addition to his technical strengths, Loay also exhibited very good communication skills. He led a well-received workshop on Deep Learning techniques for the entire team. There, he showcased both his expertise and his ability to convey complex ideas clearly. I can recommend him without hesitation."   },
     {
       name: "Mohamed Ayman Fathy",
       title: "Head of Growth (Ex. Swvl, TTS, Hotdesk)",
