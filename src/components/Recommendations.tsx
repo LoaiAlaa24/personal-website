@@ -14,7 +14,7 @@ const Recommendations: React.FC = () => {
       relationship: "Managed Loay directly",
       date: "June 8, 2025",
       image: "/employees/Mohamed Hamza.jpeg",
-      testimonial: "I had the distinct pleasure of working alongside Loay at Hotdesk, where he demonstrated exceptional leadership in spearheading a critical Machine Learning project. He was instrumental in developing and deploying a complex ML model from ideation to production. Loay consistently navigated ambiguity with strategic clarity, transforming abstract ideas into impactful solutions. His proactive approach and deep expertise make him an invaluable asset to any data-driven organization."
+      testimonial: "I had the distinct pleasure of working alongside Loay at Hotdesk, where he demonstrated exceptional leadership in spearheading a critical Machine Learning project. As the lead for both Data Engineering and Machine Learning, Loay was instrumental in driving the development and successful deployment of a complex ML model from its initial ideation phase all the way to production and beyond. Loay possesses a rare ability to not only conceptualize innovative AI/ML solutions but also to meticulously execute them. He consistently navigated the inherent ambiguities often found in data science projects with remarkable clarity and strategic thinking, transforming abstract ideas into tangible, impactful results. Beyond his technical prowess, Loay is a true leader and a positive force. He consistently elevated the team's capabilities, demonstrating an unwavering commitment to learning and sharing knowledge, while simultaneously inspiring those around him to achieve their best. His proactive approach, combined with his deep expertise, makes him an invaluable asset to any data-driven organization. I wholeheartedly recommend Loay to any team looking for an AI/Data Scientist who can not only deliver cutting-edge solutions but also lead, innovate, and thrive in dynamic environments."
     },
     {
       name: "Max Weber",
@@ -29,7 +29,7 @@ const Recommendations: React.FC = () => {
       relationship: "Worked with Loay on different teams",
       date: "June 1, 2025",
       image: "/employees/Mohamed Ayman Fathy.jpeg",
-      testimonial: "Loay is one of the brightest minds I've worked with. He built Hotdesk's first recommendation engine, improving conversion by 20%, and solved major challenges with image classification models. His contributions significantly boosted our platform performance."
+      testimonial: "Loay is one of the brightest minds I’ve ever worked with, he single handedly came up and executed Hotdesk’s first ever recommendation engine that improved conversion rates by atleast 20% along with that solved one of the biggest problems we had, the image quality. He has built an image quality and classification model which contributed a significant increase in the Listings CTR%. I hope our paths cross again in the future! "
     },
     {
       name: "Hala Hagag",
@@ -77,7 +77,7 @@ const Recommendations: React.FC = () => {
       relationship: "Studied with Loay",
       date: "June 2, 2025",
       image: "/employees/Ali Ahmed.jpeg",
-      testimonial: "I've known and collaborated with Loay for over nine years. Throughout university and various projects, he stood out for his innovation and deep technical insight. Loay is passionate about emerging tech, especially AI, and always brings fresh perspectives. I wholeheartedly recommend him for his strong communication, collaborative mindset, and impact-driven attitude."
+      testimonial: "I’ve had the pleasure of knowing and collaborating with Loay for over nine years, beginning with our time together at university. Throughout our studies and across various projects — from coursework and hackathons to personal side ventures — Loay consistently stood out as a highly dedicated and innovative individual. What always impressed me was his unique approach to problem-solving and ideation. He combines deep technical insight with creativity, often bringing fresh perspectives that elevate any team he’s part of. His academic track record speaks for itself, and his professional journey has only added to his depth of expertise. Beyond his technical capabilities, Loay is deeply passionate about emerging technologies, particularly in the field of AI. He’s often the first to share and discuss the latest developments, always thinking ahead about how they can be practically applied or turned into new opportunities. I wholeheartedly recommend Loay — not just for his technical excellence, but also for his strong communication skills, collaborative mindset, and genuine drive to create meaningful impact. He’s someone who adds value wherever he goes."
     },
     {
       name: "Laila Amgad El Zawawy",
