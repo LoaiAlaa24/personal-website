@@ -61,7 +61,7 @@ const Recommendations: React.FC = () => {
       relationship: "Reported directly to Loay",
       date: "June 1, 2025",
       image: "/employees/Youssef.jpeg",
-      testimonial: "Loay has been an incredible mentor. From day one, he guided me through challenges with patience and supported my growth both technically and professionally. His leadership and supportive nature made a big impact on my development."
+      testimonial: "I’ve had the privilege of working with Loay, who has been more than just a senior colleague—he’s been an incredible mentor. From day one, Loay shared his knowledge openly, patiently guided me through difficult tasks, and always made time to help me grow both technically and professionally. His leadership, patience, and supportive attitude made it easy for me to grow. I deeply appreciate the guidance and support he’s given to me."
     },
     {
       name: "Ahmed Mohamed Nagy",
