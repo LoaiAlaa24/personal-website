@@ -40,7 +40,7 @@ const Experience: React.FC = () => {
     {
       company: "Volkswagen Group",
       position: "Gen AI Researcher (Thesis)",
-      location: "Germany",
+      location: "Wolfsburg, Germany",
       period: "Dec 2023 – Sep 2024",
       description: [
         "Used Stable Diffusion + Unity for synthetic corner case generation in autonomous driving datasets",
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
     {
       company: "Hotdesk",
       position: "Software Engineer (AI)",
-      location: "Germany",
+      location: "Dubai (remotely)",
       period: "Sep 2022 – Dec 2023",
       description: [
         "Built the recommendation engine, image quality filter (CNN + OpenCV), and optimized ETL pipelines on GCP",
@@ -73,7 +73,7 @@ const Experience: React.FC = () => {
     {
       company: "Stadtwerke München",
       position: "Working Student (AI)",
-      location: "Germany",
+      location: "Munich, Germany",
       period: "Oct 2022 – Dec 2023",
       description: [
         "Built LLM-based systems like German email classifier (BERT), PDF anonymization (OCR + NLP)",
@@ -88,7 +88,7 @@ const Experience: React.FC = () => {
     {
       company: "KNOWRON",
       position: "Working Student (ML/Software)",
-      location: "Germany",
+      location: "Munich, Germany",
       period: "Jul 2021 – Sep 2022",
       description: [
         "Built dense retrieval search engine and co-developed mobile apps (Voith, ASM) published on App Stores",
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
     {
       company: "Extreme Solutions",
       position: "Software Engineer",
-      location: "Egypt",
+      location: "Cairo, Egypt",
       period: "Jul 2020 – Aug 2021",
       description: [
         "Developed mobile/web apps (e.g., American University in Cairo app) using React Native & ReactJS",
