@@ -28,7 +28,7 @@ const Experience: React.FC = () => {
       description: [
         "LLMs & Agents cool stuff :)"
       ],
-      technologies: ["LLMs", "AI Agents", "Automation"],
+      technologies: ["LLMs", "AI Agents", "Automation", "n8n"],
       color: "from-emerald-500 to-cyan-600",
       image: null,
       images: null,
