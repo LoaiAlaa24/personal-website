@@ -29,6 +29,11 @@ const Companies: React.FC = () => {
       website: "https://www.knowron.com/"
     },
     {
+      name: "Legartis",
+      logo: "/companies/legartis.png",
+      website: "https://www.legartis.ai/"
+    },
+    {
       name: "Hotdesk",
       logo: "/companies/hotdesk.png",
       website: "https://www.hotdesk.com/"
