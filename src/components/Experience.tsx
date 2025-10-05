@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
       location: "Leipzig, Germany",
       period: "Oct 2024 – Present",
       description: [
-        "LLMs & Agents cool stuff :)"
+        "LLMs, Automations, and Agents cool stuff :)"
       ],
       technologies: ["LLMs", "AI Agents", "Automation", "n8n"],
       color: "from-emerald-500 to-cyan-600",
