@@ -30,7 +30,7 @@ const Companies: React.FC = () => {
     },
     {
       name: "Legartis",
-      logo: "/companies/legartis.png",
+      logo: "/companies/legartis.avif",
       website: "https://www.legartis.ai/"
     },
     {
