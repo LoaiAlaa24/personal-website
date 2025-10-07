@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
       company: "Legartis GmbH",
       position: "AI Automation Engineer",
       location: "Leipzig, Germany",
-      period: "Oct 2024 – Present",
+      period: "Oct 2025 – Present",
       description: [
         "LLMs, Automations, and Agents cool stuff :)"
       ],
