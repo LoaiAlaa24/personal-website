@@ -30,7 +30,7 @@ const Experience: React.FC = () => {
       ],
       technologies: ["LLMs", "AI Agents", "Automation", "n8n"],
       color: "from-emerald-500 to-cyan-600",
-      image: null,
+      image: "/personal_images/legartis/legartis.jpg",
       images: null,
       logo: "/companies/legartis.avif"
     },
