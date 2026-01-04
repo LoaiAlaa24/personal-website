@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
   const handleDownloadResume = () => {
     // Download the actual CV
     const link = document.createElement('a');
-    link.href = '/cv/LoayNasserCV_AI_Updated.pdf';
-    link.download = 'LoayNasser_CV.pdf';
+    link.href = '/cv/Loay_Nasser_Enhanced_CV.pdf';
+    link.download = 'Loay_Nasser_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
