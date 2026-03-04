@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
       company: "EFG Holding",
       position: "Senior Data Scientist",
       location: "Remote",
-      period: "Dec 2024 – Present",
+      period: "Dec 2024 – Feb 2026",
       description: [
         "Built LangGraph RAG agents with FastAPI on Azure integrated into Microsoft Power Automate, improving workflow efficiency by 70%",
         "Enabled multimodal retrieval (text + images + tables), used LangSmith, and evaluated performance with RAGAS",
