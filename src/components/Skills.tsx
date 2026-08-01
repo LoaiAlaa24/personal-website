@@ -52,6 +52,12 @@ const Skills: React.FC = () => {
       icon: <CommandLineIcon className="h-6 w-6" />,
       color: "from-cyan-500 to-blue-600",
       skills: ["Git", "LangGraph", "Unity", "Streamlit", "Jupyter", "LangSmith", "RAGAS", "LangSmith"]
+    },
+    {
+      title: "GTM & Revenue Engineering",
+      icon: <CpuChipIcon className="h-6 w-6" />,
+      color: "from-emerald-500 to-teal-600",
+      skills: ["HubSpot", "Clay", "n8n", "Kafka", "Grain", "Instantly", "HeyReach", "MCP", "Claude Agent SDK"]
     }
   ];
 
@@ -148,12 +154,13 @@ const Skills: React.FC = () => {
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
             AI Specializations
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
               { name: "Natural Language Processing", icon: <Psychology className="text-4xl text-blue-600" />, color: "bg-blue-100" },
               { name: "Computer Vision", icon: <Visibility className="text-4xl text-green-600" />, color: "bg-green-100" },
               { name: "Generative AI", icon: <AutoAwesome className="text-4xl text-purple-600" />, color: "bg-purple-100" },
-              { name: "Recommendation Systems", icon: <ThumbUp className="text-4xl text-orange-600" />, color: "bg-orange-100" }
+              { name: "Recommendation Systems", icon: <ThumbUp className="text-4xl text-orange-600" />, color: "bg-orange-100" },
+              { name: "Agentic GTM Automation", icon: <AutoAwesome className="text-4xl text-emerald-600" />, color: "bg-emerald-100" }
             ].map((specialization, index) => (
               <motion.div
                 key={index}

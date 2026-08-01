@@ -22,13 +22,17 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       company: "Legartis GmbH",
-      position: "AI Automation Engineer",
+      position: "GTM Engineer / AI Engineer",
       location: "Leipzig, Germany",
       period: "Oct 2025 – Present",
       description: [
-        "LLMs, Automations, and Agents cool stuff :)"
+        "Built an enrichment and ICP-qualification agent (Claude + Clay MCP + agentic web research) that resolves, verifies, and de-duplicates company and contact records, scores them against the ICP, and auto-routes high-fit accounts to the matching rep, cutting time-to-first-touch from 3 days to instant outreach.",
+        "Designed an agentic meeting-intelligence pipeline that syncs Grain call recordings (MCP) and HubSpot email threads into a unified customer wiki, extracts SUGAARR metrics, and writes them back to CRM — replacing 8 hrs/week of manual call review and feeding verbatim customer pain points to Product, Sales, and Customer Success.",
+        "Built and shipped Charlie, a production RAG sales agent over a curated knowledge base, instrumented to log prospect questions as intent signals for reps deflecting 45% of inbound product questions.",
+        "Engineered a multichannel outbound engine integrating Clay, Instantly, and HeyReach with per-account AI personalization and reply sync back to HubSpot, plus a self-serve prospecting agent so reps build ICP-matched lists without engineering.",
+        "Owned the event-driven integration layer between product and HubSpot (n8n + Kafka): user/company creation, trial activity, in-product surveys, and lifecycle progression (Lead → MQL → Self-Service → SQL), with version control and review conventions."
       ],
-      technologies: ["LLMs", "AI Agents", "Automation", "n8n"],
+      technologies: ["Claude", "Clay", "MCP", "AI Agents", "n8n", "Kafka", "HubSpot", "Grain", "Instantly", "HeyReach", "RAG"],
       color: "from-emerald-500 to-cyan-600",
       image: "/personal_images/legartis/legartis.jpg",
       images: null,

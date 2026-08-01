@@ -13,6 +13,96 @@ import {
 const Projects: React.FC = () => {
   const projects = [
     {
+      title: "ICP Enrichment & Qualification Agent",
+      description: "Agentic enrichment pipeline (Claude + Clay MCP + agentic web research) that resolves, verifies, and de-duplicates company and contact records, scores them against the ICP, and auto-routes high-fit accounts to the matching rep — cutting time-to-first-touch from 3 days to instant outreach.",
+      technologies: ["Claude", "Clay", "MCP", "Agentic Web Research", "ICP Scoring", "HubSpot"],
+      icon: <DocumentMagnifyingGlassIcon className="h-8 w-8" />,
+      color: "from-emerald-500 to-teal-600",
+      image: null,
+      github: null,
+      demo: null,
+      company: "Legartis GmbH",
+      logo: "/companies/legartis.avif",
+      highlights: [
+        "3 days to instant outreach on time-to-first-touch",
+        "Automated record resolution & de-duplication",
+        "ICP scoring with auto-routing to reps",
+        "Agentic web research for verification"
+      ]
+    },
+    {
+      title: "Meeting Intelligence Pipeline",
+      description: "Agentic pipeline syncing Grain call recordings (MCP) and HubSpot email threads into a unified customer wiki, extracting SUGAARR metrics and writing them back to CRM — replacing 8 hrs/week of manual call review and feeding verbatim customer pain points to Product, Sales, and Customer Success.",
+      technologies: ["Grain", "MCP", "HubSpot", "SUGAARR", "Agentic Pipelines", "CRM Sync"],
+      icon: <ChatBubbleBottomCenterTextIcon className="h-8 w-8" />,
+      color: "from-cyan-500 to-blue-600",
+      image: null,
+      github: null,
+      demo: null,
+      company: "Legartis GmbH",
+      logo: "/companies/legartis.avif",
+      highlights: [
+        "Replaced 8 hrs/week of manual call review",
+        "Unified customer wiki from calls + email",
+        "Automated SUGAARR metric extraction",
+        "Verbatim pain points fed to Product & Sales"
+      ]
+    },
+    {
+      title: "Charlie: Production RAG Sales Agent",
+      description: "Shipped Charlie, a production RAG sales agent over a curated knowledge base, instrumented to log prospect questions as intent signals for reps — deflecting 45% of inbound product questions.",
+      technologies: ["RAG", "LLMs", "Knowledge Base", "Intent Signals", "Sales Automation"],
+      icon: <SparklesIcon className="h-8 w-8" />,
+      color: "from-purple-600 to-pink-700",
+      image: null,
+      github: null,
+      demo: null,
+      company: "Legartis GmbH",
+      logo: "/companies/legartis.avif",
+      highlights: [
+        "45% of inbound product questions deflected",
+        "Production RAG agent over curated knowledge base",
+        "Prospect questions logged as intent signals",
+        "Shipped end-to-end to production"
+      ]
+    },
+    {
+      title: "Multichannel Outbound Engine",
+      description: "Engineered a multichannel outbound engine integrating Clay, Instantly, and HeyReach with per-account AI personalization and reply sync back to HubSpot, plus a self-serve prospecting agent so reps build ICP-matched lists without engineering.",
+      technologies: ["Clay", "Instantly", "HeyReach", "AI Personalization", "HubSpot", "Prospecting Agents"],
+      icon: <CpuChipIcon className="h-8 w-8" />,
+      color: "from-orange-500 to-red-600",
+      image: null,
+      github: null,
+      demo: null,
+      company: "Legartis GmbH",
+      logo: "/companies/legartis.avif",
+      highlights: [
+        "Per-account AI personalization at scale",
+        "Reply sync back into HubSpot",
+        "Self-serve prospecting agent for reps",
+        "ICP-matched list building without engineering"
+      ]
+    },
+    {
+      title: "Product-HubSpot Integration Layer",
+      description: "Owned the event-driven integration layer between product and HubSpot (n8n + Kafka): user/company creation, trial activity, in-product surveys, and lifecycle progression (Lead → MQL → Self-Service → SQL), with version control and review conventions.",
+      technologies: ["n8n", "Kafka", "HubSpot", "Event-Driven Architecture", "Lifecycle Automation"],
+      icon: <CodeBracketIcon className="h-8 w-8" />,
+      color: "from-indigo-500 to-purple-600",
+      image: null,
+      github: null,
+      demo: null,
+      company: "Legartis GmbH",
+      logo: "/companies/legartis.avif",
+      highlights: [
+        "Event-driven product-to-CRM integration",
+        "Full lifecycle automation (Lead → SQL)",
+        "n8n + Kafka pipeline architecture",
+        "Version control & review conventions"
+      ]
+    },
+    {
       title: "HR Matching System",
       description: "AI-powered HR recruitment system using semantic search and LLMs to match job descriptions with top candidates. Leverages advanced natural language processing to understand job requirements and candidate profiles, delivering precise matches based on skills, experience, and cultural fit.",
       technologies: ["Semantic Search", "LLMs", "NLP", "Vector Databases", "Python", "FastAPI", "Embeddings", "RAG"],

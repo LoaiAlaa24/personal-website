@@ -47,15 +47,17 @@ const About: React.FC = () => {
           >
             <div className="prose prose-lg">
               <p className="text-gray-600 leading-relaxed mb-6">
-                I am a Data Scientist and Full-Stack AI Engineer with international experience across Germany, Egypt, and the UAE. 
-                With a Master's degree from the Technical University of Munich (TUM) and project collaborations 
-                with top global companies, I specialize in building scalable AI systems, multimodal RAG pipelines, 
-                and advanced NLP tools.
+                I am a GTM Engineer / AI Engineer with international experience across Germany, Egypt, and the UAE.
+                With a Master's degree from the Technical University of Munich (TUM) and project collaborations
+                with top global companies, I specialize in building AI agents that plug directly into revenue
+                systems — enrichment, outbound, meeting intelligence, and RAG-powered sales tooling wired into
+                CRM and go-to-market stacks like HubSpot, Clay, and n8n.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                From deploying production-grade models to fine-tuning LLMs, I bring full-stack intelligence 
-                to every product I touch. My work spans across autonomous vehicle research, recommendation systems, 
-                and enterprise AI solutions that have improved workflow efficiency by up to 70%.
+                From deploying production-grade models to fine-tuning LLMs and shipping event-driven integrations,
+                I bring full-stack intelligence to every product I touch. My work spans across GTM automation,
+                autonomous vehicle research, recommendation systems, and enterprise AI solutions that have
+                improved workflow efficiency by up to 70%.
               </p>
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div>

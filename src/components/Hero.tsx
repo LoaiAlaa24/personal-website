@@ -59,16 +59,16 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Data Scientist & Full-Stack AI Engineer
+              GTM Engineer / AI Engineer
             </motion.p>
-            
-            <motion.p 
+
+            <motion.p
               className="text-lg sm:text-xl text-gray-500 mb-8 max-w-5xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-               Transforming AI research into scalable real-world systems.
+               Building AI agents that drive revenue — from lead to CRM.
             </motion.p>
           </motion.div>
 
