@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-               Building AI agents that drive revenue — from lead to CRM.
+               AI engineer turning research into products and pipelines into revenue.
             </motion.p>
           </motion.div>
 
